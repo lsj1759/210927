@@ -1,6 +1,5 @@
-#include <iostream>
-#include <cstdlib>
-#include <ctime>
+#include <iostream> 
+#include "헤더.h"
 
 using namespace std;
 
@@ -153,53 +152,155 @@ using namespace std;
 //	//10
 //}
 
-int main()
+//int main()
+////{
+////	srand(time(NULL));
+////
+////	for (int i = 0; i < 10; ++i)
+////	{
+////		int R = rand();
+////
+////		cout << R << endl;
+////	}
+////
+////	return 0;
+////	
+////}
 //{
-//	srand(time(NULL));
-//
+//	//initialize
+//	//배열 초기화
+//	int Number[10];
+//	
 //	for (int i = 0; i < 10; ++i)
 //	{
-//		int R = rand();
-//
-//		cout << R << endl;
+//		Number[i] = i + 1;
 //	}
 //
-//	return 0;
+//	//난수 초기화, 0 - Rand_MAX
+//	srand(time(NULL));
+//
+//	//숫자 섞기(shuffle)
+//	for (int i = 0; i < 10; ++i)
+//	{
+//		//0 - 9
+//		int R = rand() % 10;
+//		//to do
+//		int R2 = rand() % 10;
+//		int Temp = Number[R];
+//		Number[R] = Number[R2];
+//		Number[R2] = Temp;
+//
+//	}
 //	
+//	//Display
+//	//출력
+//	for (int i = 0; i < 10; ++i)
+//	{
+//		cout << Number[i] << endl;
+//	}
+//
+//
+//	return 0;
+//
 //}
+//선언
+//반환형 (int, float, bool, void, char) 함수이름(인자(void))
+
+//구현
+//반환형 (int, float, bool, void, char) 함수이름(인자(void))
+//{
+// //to do
+// }
+
+//선언
+//int Add(int A, int B);
+//
+//
+//int main()
+//{
+//
+//	int A = 5;
+//	int B = 6;
+//
+//	cout << Add(A, B) << endl;
+//
+//	return 0;
+//}
+//
+//
+//int Add(int A, int B)
+//{
+//
+//	return A + B;
+//}
+
+//pointer
+//선언
+//변수* = jnt*, char*, float* > 주소값 > 메모리 위치 가르키는 화살표
+//사용
+//*변수 = *A > 화살표가 가르키는 메모리 위치의 값
+//&변수 = 변수의 메모리 위치 (번지, Address)
+
+//function, call by value (* pointer)
+//call by value로 call by reference 구현
+void Swap(int *A, int *B)
 {
-	//배열 초기화
-	int Number[10];
-	
-	for (int i = 0; i < 10; ++i)
-	{
-		Number[i] = i + 1;
-	}
+	int Temp = *A;
+	*A = *B;
+	*B = Temp;
 
-	//난수 초기화, 0 - Rand_MAX
-	srand(time(NULL));
+	cout << *A << endl;
+	cout << *B << endl;
+}
+int main()
+{
+	int A = 4;
+	int B = 5;
 
-	//숫자 섞기
-	for (int i = 0; i < 10; ++i)
-	{
-		//0 - 9
-		int R = rand() % 10;
-		//to do
-		int R2 = rand() % 10;
-		int Temp = Number[R];
-		Number[R] = Number[R2];
-		Number[R2] = Temp;
-
-	}
-	
-
-	//출력
-	for (int i = 0; i < 10; ++i)
-	{
-		cout << Number[i] << endl;
-	}
-
-
-	return 0;
+	Swap(&A, &B);
+	cout << A << endl;
+	cout << B << endl;
 
 }
+
+
+
+//선언
+//int Add(int A, int B);
+//int Sub(int A, int B);
+//int Mul(int A, int B);
+//int Div(int A, int B);
+//int Mod(int A, int B);
+//int main()
+//{
+//
+//	int A = 3;
+//	int B = 4;
+//
+//	cout << Add(A, B) << endl;
+//	cout << Sub(A, B) << endl;
+//	cout << Mul(A, B) << endl;
+//	cout << Div(A, B) << endl;
+//	cout << Mod(A, B) << endl;
+//}
+//
+//int Add(int A, int B)
+//{
+//	return A + B;
+//}
+//int Sub(int A, int B)
+//{
+//	return A - B;
+//}
+//int Mul(int A, int B)
+//{
+//	return A * B;
+//}
+//int Div(int A, int B)
+//{
+//	return A / B;
+//}
+//int Mod(int A, int B)
+//{
+//	return A % B;
+//}
