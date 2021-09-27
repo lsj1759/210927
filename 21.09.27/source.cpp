@@ -47,32 +47,70 @@ using namespace std;
 //	}
 //}
 
+//int main()
+//{
+//	int Number = 0;
+//	cout << "성적을 입력하세요. : ";
+//	cin >> Number;
+//
+//	if ( Number <= 100  &&  Number > 90)
+//	{
+//		cout << "A입니다.";
+//	}
+//	else if (Number <= 90 && Number > 80)
+//	{
+//		cout << "B입니다.";
+//	}
+//	else if (Number <= 80 && Number >= 70)
+//	{
+//		cout << "C입니다.";
+//	}
+//	else if (Number <= 60 && Number > 50)
+//	{
+//		cout << "D입니다.";
+//	}
+//	else if (Number <= 50)
+//	{
+//		cout << "F입니다.";
+//	}
+//
+//	return 0;
+//}
+
 int main()
 {
-	int Number = 0;
-	cout << "성적을 입력하세요. : ";
-	cin >> Number;
+	int Score = 0;
+	char Grade;
 
-	if ( Number <= 100  &&  Number > 90)
+	cin >> Score;
+
+	switch (Score)
 	{
-		cout << "A입니다.";
-	}
-	else if (Number <= 90 && Number > 80)
+
+	case 100:
 	{
-		cout << "B입니다.";
+		Grade = 'A';
+		break;
 	}
-	else if (Number <= 80 && Number > 70)
+	case 90:
 	{
-		cout << "C입니다.";
+		Grade = 'B';
+		break;
 	}
-	else if (Number <= 60 && Number > 50)
+	case 80:
 	{
-		cout << "D입니다.";
+		Grade = 'C';
+		break;
 	}
-	else if (Number <= 50)
+	default:
 	{
-		cout << "F입니다.";
+		Grade = 'D';
 	}
+
+	}
+
+	cout << Grade;
+
 
 	return 0;
 }
