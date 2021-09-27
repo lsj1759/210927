@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "21.09.27", "21.09.27\21.09.27.vcxproj", "{CFF63446-E69B-47C4-A3AC-78E37794BFC9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFF63446-E69B-47C4-A3AC-78E37794BFC9}.Debug|x64.ActiveCfg = Debug|x64
+		{CFF63446-E69B-47C4-A3AC-78E37794BFC9}.Debug|x64.Build.0 = Debug|x64
+		{CFF63446-E69B-47C4-A3AC-78E37794BFC9}.Debug|x86.ActiveCfg = Debug|Win32
+		{CFF63446-E69B-47C4-A3AC-78E37794BFC9}.Debug|x86.Build.0 = Debug|Win32
+		{CFF63446-E69B-47C4-A3AC-78E37794BFC9}.Release|x64.ActiveCfg = Release|x64
+		{CFF63446-E69B-47C4-A3AC-78E37794BFC9}.Release|x64.Build.0 = Release|x64
+		{CFF63446-E69B-47C4-A3AC-78E37794BFC9}.Release|x86.ActiveCfg = Release|Win32
+		{CFF63446-E69B-47C4-A3AC-78E37794BFC9}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9D7A8390-EC03-4DC5-91D9-6BD983502A9E}
+	EndGlobalSection
+EndGlobal
