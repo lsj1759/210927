@@ -1,4 +1,6 @@
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
@@ -77,40 +79,127 @@ using namespace std;
 //	return 0;
 //}
 
+//int main()
+//{
+//	int Score = 0;
+//	char Grade;
+//
+//	cin >> Score;
+//
+//	switch (Score)
+//	{
+//
+//	case 100:
+//	{
+//		Grade = 'A';
+//		break;
+//	}
+//	case 90:
+//	{
+//		Grade = 'B';
+//		break;
+//	}
+//	case 80:
+//	{
+//		Grade = 'C';
+//		break;
+//	}
+//	default:
+//	{
+//		Grade = 'D';
+//	}
+//
+//	}
+//
+//	cout << Grade; 
+//
+//
+//	return 0;
+//}
+
+//int main()
+//{
+//	int Number[10];
+//
+//	for (int i = 0; i < 10; i++)
+//	{
+//		Number[i] = i + 1;
+//	}
+//
+//	for (int i = 0; i < 10; i++)
+//	{
+//		cout << Number[i] << endl;
+//	}
+//
+//
+//	return 0;
+//}
+
+//int main()
+//{
+//	int A = 10;
+//	int B = 20;
+//	
+//
+//	//Process
+//	//to do
+//	int C = A;
+//	A = B;
+//	B = C;
+//	
+//	cout << A << endl;
+//	cout << B << endl;
+//	//20
+//	//10
+//}
+
 int main()
+//{
+//	srand(time(NULL));
+//
+//	for (int i = 0; i < 10; ++i)
+//	{
+//		int R = rand();
+//
+//		cout << R << endl;
+//	}
+//
+//	return 0;
+//	
+//}
 {
-	int Score = 0;
-	char Grade;
-
-	cin >> Score;
-
-	switch (Score)
+	//배열 초기화
+	int Number[10];
+	
+	for (int i = 0; i < 10; ++i)
 	{
-
-	case 100:
-	{
-		Grade = 'A';
-		break;
-	}
-	case 90:
-	{
-		Grade = 'B';
-		break;
-	}
-	case 80:
-	{
-		Grade = 'C';
-		break;
-	}
-	default:
-	{
-		Grade = 'D';
+		Number[i] = i + 1;
 	}
 
-	}
+	//난수 초기화, 0 - Rand_MAX
+	srand(time(NULL));
 
-	cout << Grade;
+	//숫자 섞기
+	for (int i = 0; i < 10; ++i)
+	{
+		//0 - 9
+		int R = rand() % 10;
+		//to do
+		int R2 = rand() % 10;
+		int Temp = Number[R];
+		Number[R] = Number[R2];
+		Number[R2] = Temp;
+
+	}
+	
+
+	//출력
+	for (int i = 0; i < 10; ++i)
+	{
+		cout << Number[i] << endl;
+	}
 
 
 	return 0;
+
 }
